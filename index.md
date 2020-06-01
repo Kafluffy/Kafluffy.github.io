@@ -1,1 +1,3 @@
-style HOME.html
+---
+layout: HOME
+---
