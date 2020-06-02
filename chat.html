@@ -1,30 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Chat - Customer Module</title>
-<link type="text/css" rel="stylesheet" href="style.css" />
-</head>
- 
-<div id="wrapper">
-    <div id="menu">
-        <p class="welcome">Welcome, <b></b></p>
-        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
-        <div style="clear:both"></div>
+<!--
+
+CTRL+SHIFT+I -> Console -> https://pastebin.com/raw/87Pq6zZq
+
+-----------------------------------------------------------
+
+Screenshots on mobile PLFM: https://imgur.com/gallery/8Om5O
+
+-->
+<div class="sidebar chat">
+    <h1 class="ui header">CHAT</h1>
+    <div class="chat-container">
+        <div class="ui mobile-alert chat-mobile-alert" style="display: none;">
+            <p>Your browser's height is too small for chat.</p>
+        </div>
+        <div class="fade-area"></div>
+        <div class="messages"></div>
+        <div class="chat-input">
+            <div class="ui icon fluid input">
+                <i class="angle right link icon"></i>
+                <input type="text" maxlength="255" id="chatInput" placeholder="Chat...">
+            </div>
+        </div>
     </div>
-     
-    <div id="chatbox"></div>
-     
-    <form name="message" action="">
-        <input name="usermsg" type="text" id="usermsg" size="63" />
-        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
-    </form>
 </div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-// jQuery Document
-$(document).ready(function(){
- 
-});
-</script>
-</body>
-</html>
