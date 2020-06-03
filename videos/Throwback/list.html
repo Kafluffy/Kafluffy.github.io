@@ -1,24 +1,104 @@
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  Your browser does not support the video.
-</video>
+<div>
+<style>
+ h1 {
+ text-shadow: 2px 2px 0px rgba(153,170,181,0.97);
+ font-family: Impact, Charcoal, sans-serif;
+ font-size: 70px;
+ letter-spacing: 2px;
+ word-spacing: 2px;
+ color: #00FFFF;
+ font-weight: 400;
+ text-decoration: none solid rgb(255, 255, 255);
+ font-style: normal;
+ font-variant: small-caps;
+ text-transform: capitalize;
+ }
+ 
+ h2 {
+ text-shadow: 3px 3px 0px rgba(123,123,123,0.97);
+ font-family: Impact, Charcoal, sans-serif;
+ font-size: 50px;
+ letter-spacing: 2px;
+ word-spacing: 2px;
+ color: #00FFFF;
+ text-decoration: none solid rgb(255, 255, 255);
+ font-style: normal;
+ font-variant: small-caps;
+ text-transform: capitalize;
+ text-decoration: underline overline;
+ border-left: 10px solid transparent;
+ }
+ 
+ p {
+ text-shadow: 3px 3px 0px rgba(123,123,123,0.97);
+ font-family: Impact, Charcoal, sans-serif;
+ font-size: 15px;
+ letter-spacing: 2px;
+ word-spacing: 2px;
+ color: #00FFFF;
+ font-weight: 400;
+ text-decoration: none solid rgb(255, 255, 255);
+ font-style: normal;
+ font-variant: small-caps;
+ text-transform: capitalize;
+ border-left: 10px solid transparent;
+ }
+.LIST { 
+  background-color: #23272A;
+  border: 10px #23272A;
+  height: 100%;
+  
+}
+.VIDCONTAINER { 
+  background-color: #2C2F33;
+  border-right: 5px solid #23272A;
+  border-left: 5px solid #1C6EA4;
+  border-radius: 0px 10px 10px 0px;
+  height: 30%;
+  width: 95%;
+}
+.VID {
+float: left;
+height: 101%;
 
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  Your browser does not support the video.
-</video>
+}
+.VIDINFO {
+float: right;
+background-color: #99AAB5;
+border-right: 5px solid #1C6EA4;
+border-radius: 0px 10px 10px 0px;
+height: 101%;
+width: 56.6%
+}
+.BUTTON {
+color: rgb(255, 255, 255); font-size: 17px; line-height: 17px; padding: 7px; border-radius: 50px; font-family: Impact, Charcoal, sans-serif; font-weight: 400; text-decoration: none; font-style: normal; font-variant: small-caps; text-transform: capitalize; background-image: linear-gradient(to right, rgb(44, 47, 51) 0%, rgb(63, 67, 73) 100%, rgb(63, 67, 73) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px; border: 3px ridge rgb(0, 202, 255); display: inline-block;
+width: 30%}
 
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
+.myButton:hover {
+background: #2C2F33; }
+.myButton:active {
+background: #3F4349; }
+</style>
+<div class="LIST">
+<center>
+<h1>Throwback videos!</h1>
+</center>
+<br>
+<!--VIDEO-->
+<div class="VIDCONTAINER">
+<div class="VID">
+<video height="100%"controls>
+  <source src=".mp4" type="video/mp4">
   Your browser does not support the video.
 </video>
-
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  Your browser does not support the video.
-</video>
-
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  Your browser does not support the video.
-</video>
+</div>
+<div class="VIDINFO">
+<h2>Title</h2>
+<p>DESCRIPTION</p>
+<center>
+<button class="BUTTON" href="LINK">link</button>
+</center>
+</div>
+</div>
+<!--VIDEO END-->
+</div>
