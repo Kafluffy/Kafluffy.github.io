@@ -2988,6 +2988,19 @@
     display: inline-flex;
   }
 </style>
+<style>
+  @media screen { 
+  body { margin: 0 }
+  .row, .col { overflow: hidden; position: absolute; }
+  .row { left: 0; right: 0; }
+  .col { top: 0; bottom: 0; }
+  .scroll-x { overflow-x: auto; }
+  .scroll-y { overflow-y: auto; }
+  .header.row { height: 75px; top: 0; }
+  .body.row { top: 75px; bottom: 50px; }
+  .footer.row { height: 50px; bottom: 0; }
+  }
+  </style>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -2995,7 +3008,7 @@
 
 </head>
 <!--NAVBAR-->
-
+<div class="header row">
 <body>
   <amp-sidebar id="sidebar" class="cid-r9hYnpdbBm" layout="nodisplay" side="right">
     <div class="builder-sidebar" id="builder-sidebar">
@@ -3090,8 +3103,10 @@
 
     <!-- </div> -->
   </section>
+  </div>
   <!--NAVBAR END-->
   <!--BODY-->
+  <div class="body row scroll-y" style="background:black;">
   <div style="width:300%;height:100%;background:black;">
 <div style="width:100%;height:100%;background:black;float:center;margin:auto;border: 3px solid;padding: 10px; display: flex;justify-content: center;align-items: center;">
 <img src="dnd1.png"; style=" display: flex;justify-content: center;align-items: center;height: 69px; width: 230px ;border: 5px solid black; ">
@@ -3139,8 +3154,10 @@ That Means I Don't Get Notifications SO Pings Don't Bother Me!</a>
  </a>
    </div>
  </div>
+</div>
   <!--BODY END-->
   <!--FOOTER START-->
+<div class="footer row">
   <section class="footer1 cid-r9i2fKQSx1" id="footer1-b">
 
     <div class="footer-container container-fluid">
@@ -3150,7 +3167,7 @@ That Means I Don't Get Notifications SO Pings Don't Bother Me!</a>
       </div>
     </div>
   </section>
-
+</div>
 </body>
 
 </html>
