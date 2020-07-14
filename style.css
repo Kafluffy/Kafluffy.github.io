@@ -64,6 +64,13 @@ footer {
   float: left center;
   border-left: 10px solid transparent;
 }
+.title2 {
+  color: #7289DA;
+  font-family: 'zorque';
+  float: left center;
+  border-left: 10px solid transparent;
+  font-size: 60px;
+}
 .topnav .title {
   float: left;
   display: block;
