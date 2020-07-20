@@ -69,6 +69,8 @@
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      var msg = 'Logged in as: ' + googleUser.getBasicProfile().getName();
+      document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
     }
     function onFailure(error) {
@@ -89,8 +91,9 @@
   </script>
 
   <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script></center>
-   <div  id="attid" style="display:none;">Show/Hide this text
-      
+   <div  id="attid" style="display:none;">
+   <h3 id="headertag">Logged in as:</h3>
+
    </div>
     </section>
     <center>
