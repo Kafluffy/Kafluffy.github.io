@@ -82,7 +82,7 @@
       var avatar = profile.getImageUrl();
       document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
-      document.getElementById("profileImage").src = avatar;
+      document.getElementById("avatar").src = avatar;
     }
     function onFailure(error) {
       console.log(error);
@@ -107,7 +107,7 @@
        <h2>
          ACCOUNT
        </h2>
-   <image id="profileImage" src="/favicon-32x32.png" />
+   <image id="avatar" src="/favicon-32x32.png"/>
    <h3 id="headertag">NAME</h3>
      </div>
    </div>
