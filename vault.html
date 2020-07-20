@@ -79,10 +79,10 @@
 }
     function onSuccess(googleUser) {
       var msg = profile.getName();
-      var avatar = profile.getImageUrl();
+      var img = profile.getImageUrl();
       document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
-      document.getElementById("avatar").src = avatar;
+      document.getElementById("userimg").src = img;
     }
     function onFailure(error) {
       console.log(error);
@@ -107,7 +107,7 @@
        <h2>
          ACCOUNT
        </h2>
-   <image id="avatar" src="/favicon-32x32.png"/>
+   <image id="userimg" src="/favicon-32x32.png"/>
    <h3 id="headertag">NAME</h3>
      </div>
    </div>
