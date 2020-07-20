@@ -66,11 +66,20 @@
     <section>
       <center>
   <div id="my-signin2"></div>
+        
   <script>
+    if (auth2.isSignedIn.get()) {
+  var profile = auth2.currentUser.get().getBasicProfile();
+  console.log('ID: ' + profile.getId());
+  console.log('Full Name: ' + profile.getName());
+  console.log('Given Name: ' + profile.getGivenName());
+  console.log('Family Name: ' + profile.getFamilyName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+}
     function onSuccess(googleUser) {
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-      var msg = googleUser.getBasicProfile().getName();
-      var avatar = googleUser.getBasicProfile().getImageUrl();
+      var msg = profile.getName();
+      var avatar = profile.getImageUrl();
       document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
       document.getElementById("profileImage").innerHTML = avatar;
