@@ -69,9 +69,11 @@
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      document.getElementById("attid").style.display = 'inline';
     }
     function onFailure(error) {
       console.log(error);
+       document.getElementById("attid").style.display = 'none';
     }
     function renderButton() {
       gapi.signin2.render('my-signin2', {
@@ -87,6 +89,9 @@
   </script>
 
   <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script></center>
+   <div  id="attid" style="display:none;">Show/Hide this text
+      
+   </div>
     </section>
     <center>
       <footer><a class="mit" href="/mit" target="_blank">MIT License</a> | <a class="mit" href="/mit" target="_blank">Copyright (c) 2020 BrandgrandReal</a></footer>
