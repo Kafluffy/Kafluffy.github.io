@@ -79,10 +79,9 @@
 }
     function onSuccess(googleUser) {
       var msg = profile.getName();
-      var img = profile.getImageUrl();
       document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
-      document.getElementById("userimg").src = img;
+      document.getElementById("userimg").src = profile.getImageUrl();
     }
     function onFailure(error) {
       console.log(error);
