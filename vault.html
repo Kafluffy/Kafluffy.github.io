@@ -69,7 +69,7 @@
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-      var msg = 'Logged in as: ' + googleUser.getBasicProfile().getName() '/n Email: ' googleUser.getBasicProfile().getEmail();
+      var msg = 'Logged in as: ' + googleUser.getBasicProfile().getName();
       document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
     }
