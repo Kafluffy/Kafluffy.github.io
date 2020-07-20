@@ -69,9 +69,11 @@
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-      var msg = 'Logged in as: ' + googleUser.getBasicProfile().getName();
+      var msg = googleUser.getBasicProfile().getName();
+      var avatar = googleUser.getBasicProfile().getImageUrl();
       document.getElementById("headertag").innerHTML = msg;
       document.getElementById("attid").style.display = 'inline';
+      document.getElementById("profileImage").innerHTML = avatar;
     }
     function onFailure(error) {
       console.log(error);
@@ -92,8 +94,13 @@
 
   <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script></center>
    <div  id="attid" style="display:none;">
-   <h3 id="headertag">Logged in as:</h3>
-
+     <div class="account">
+       <h2>
+         ACCOUNT
+       </h2>
+   <image id="profileImage" src="aDefaultImage.png" />
+   <h3 id="headertag">NAME</h3>
+     </div>
    </div>
     </section>
     <center>
