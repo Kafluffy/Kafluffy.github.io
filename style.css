@@ -59,13 +59,13 @@ footer {
   background-image: url(https://brandgrandrealme.github.io/favicon-32x32.png);
   background-repeat: no-repeat;
   background-position: left center;
-  color: #7289DA;
+  color: #893D89;
   font-family: 'zorque';
   float: left center;
   border-left: 10px solid transparent;
 }
 .title2 {
-  color: #7289DA;
+  color: #893D89;
   font-family: 'zorque';
   float: left center;
   border-left: 10px solid transparent;
@@ -78,7 +78,7 @@ footer {
   padding: 7px 40px;
   text-decoration: none;
   font-size: 30px;
-  border-bottom: 3px solid #7289DA;
+  border-bottom: 3px solid #893D89;
 }
 .topnav .button {
   font-family: 'zorque';
@@ -93,7 +93,7 @@ footer {
 }
 
 .topnav .button:hover {
-  border-bottom: 4px solid #7289DA;
+  border-bottom: 4px solid #893D89;
 }
 
 .topnav a.active {
@@ -105,7 +105,7 @@ font-family: 'zorque';
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
-  border-bottom: 4px solid #7289DA;
+  border-bottom: 4px solid #893D89;
 
 }
 /* Style all font awesome icons */
@@ -132,7 +132,7 @@ font-family: 'zorque';
 }
 
 .fa:hover{
- border-bottom: 3px solid #7289DA;
+ border-bottom: 3px solid #893D89;
 }
 
 .fa-github {
@@ -161,6 +161,6 @@ background: #23272A;
 width: calc(38px + 38px + 38px);
 opacity: .9;
       padding: 5px;
-border: 5px solid #7289DA;
+border: 5px solid #893D89;
 
 }
