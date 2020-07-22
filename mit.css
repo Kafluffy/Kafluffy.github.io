@@ -9,7 +9,7 @@ body {
   font-family: "Inconsolata", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
   font-size: 1.2em;
   line-height: 1.2em;
-  color: #999;
+  color: #893D89;
 }
 
 article, footer {
@@ -45,7 +45,7 @@ footer {
 }
 
 footer a {
-  color: #666;
+  color: #893D89;
   text-shadow: 0 1px 1px #999;
   text-decoration: none;
   font-size: .8em;
@@ -71,7 +71,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #2844FA;
+  color: #893D89;
 }
 
 a:active {
